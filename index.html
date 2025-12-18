@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栅格布局</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'a a a b'
+                'c d e f'
+                'g h i f';
+            grid-gap: 5px;
+            padding: 10px;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-rows: 40vh 200px 200px;
+        }
+        
+        .item1 { grid-area: a; background-color: #f8b400; }
+        .item2 { grid-area: b; background-color: #00f81d; }
+        .item3 { grid-area: c; background-color: #00bef8; }
+        .item4 { grid-area: d; background-color: #f83600; }
+        .item5 { grid-area: e; background-color: #f800e3; }
+        .item6 { grid-area: f; background-color: #4600f8; color: white; }
+        .item7 { grid-area: g; background-color: #00bef8; }
+        .item8 { grid-area: h; background-color: #f83600; }
+        .item9 { grid-area: i; background-color: #f800e3; }
+        
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">个人照片</div>
+        <div class="grid-item item2">学习经历</div>
+        <div class="grid-item item3">通知公告</div>
+        <div class="grid-item item4">科学研究</div>
+        <div class="grid-item item5">综合新闻</div>
+        <div class="grid-item item6">专题网站</div>
+        <div class="grid-item item7">科学研究</div>
+        <div class="grid-item item8">综合新闻</div>
+        <div class="grid-item item9">专题网站</div>
+    </div>
+</body>
+</html>
